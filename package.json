@@ -1,0 +1,22 @@
+{
+  "name": "BucketList",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "(cd android/ && ./gradlew assembleDebug)",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --sourcemap-output android/app/src/main/assets/index.android.map --assets-dest android/app/src/main/res/"
+  },
+  "dependencies": {
+    "firebase": "^3.4.0",
+    "react": "15.3.2",
+    "react-native": "0.34.0",
+    "react-native-swipe-list-view": "^0.3.0",
+    "react-native-vector-icons": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.0.0",
+    "eslint": "^3.6.1",
+    "eslint-plugin-react": "^6.3.0"
+  }
+}
